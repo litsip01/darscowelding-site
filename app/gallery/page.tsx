@@ -1,5 +1,6 @@
 import Hero from '@/components/sections/Hero'
 import CTA from '@/components/sections/CTA'
+import Image from 'next/image'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -12,31 +13,37 @@ const projects = [
         title: 'Industrial Fabrication',
         category: 'Manufacturing',
         description: 'Custom steel frames and equipment mounts for a manufacturing facility.',
-    },
-    {
-        title: 'Farm Equipment Repair',
-        category: 'Agricultural',
-        description: 'Emergency repair of a combine harvester during harvest season.',
+        image: '/images/projects/manufacturing.png',
     },
     {
         title: 'Custom Gate Design',
         category: 'Residential',
         description: 'Decorative driveway gate with custom scrollwork and automation.',
+        image: '/images/projects/residential.png',
     },
     {
         title: 'Structural Steel Welding',
         category: 'Construction',
         description: 'Beam connections and structural reinforcement for commercial building.',
+        image: '/images/projects/construction.png',
+    },
+    {
+        title: 'Farm Equipment Repair',
+        category: 'Agricultural',
+        description: 'Emergency repair of a combine harvester during harvest season.',
+        image: '/images/projects/agricultural.png',
     },
     {
         title: 'Pipeline Repair',
         category: 'Oil & Gas',
         description: 'Emergency pipeline weld repair for an oil and gas operation.',
+        image: '/images/projects/oil-gas.png',
     },
     {
         title: 'Staircase Railings',
         category: 'Commercial',
         description: 'Modern steel and glass railings for an office building renovation.',
+        image: '/images/projects/commercial.png',
     },
 ]
 
@@ -59,9 +66,14 @@ export default function GalleryPage() {
                                 key={i}
                                 className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition group"
                             >
-                                {/* Placeholder for project image */}
-                                <div className="h-48 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
-                                    <span className="text-6xl">🔥</span>
+                                <div className="relative h-48 overflow-hidden">
+                                    <Image
+                                        src={project.image}
+                                        alt={project.title}
+                                        fill
+                                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                                 </div>
                                 <div className="p-6">
                                     <span className="text-amber-600 text-sm font-semibold">{project.category}</span>
