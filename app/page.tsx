@@ -8,10 +8,19 @@ import Link from 'next/link'
 const serviceIcons: Record<string, React.ReactNode> = {
   'mig-tig-welding': <Flame className="w-7 h-7" />,
   'structural-welding': <Wrench className="w-7 h-7" />,
-  'mobile-welding': <Truck className="w-7 h-7" />,
+  'mobile-welding-services': <Truck className="w-7 h-7" />,
   'fabrication': <Wrench className="w-7 h-7" />,
   'repairs-maintenance': <Shield className="w-7 h-7" />,
   'custom-metalwork': <Flame className="w-7 h-7" />,
+}
+
+const serviceImages: Record<string, string> = {
+  'mig-tig-welding': '/images/services/mig-tig-welding.png',
+  'structural-welding': '/images/services/structural-welding.png',
+  'mobile-welding-services': '/images/services/mobile-welding.png',
+  'fabrication': '/images/services/fabrication.png',
+  'repairs-maintenance': '/images/services/repairs-maintenance.png',
+  'custom-metalwork': '/images/services/custom-metalwork.png',
 }
 
 export default function Home() {
@@ -43,7 +52,8 @@ export default function Home() {
                 title={service.name}
                 description={service.description}
                 href={`/services/${service.slug}/`}
-                icon={serviceIcons[service.id]}
+                icon={serviceIcons[service.slug]}
+                image={serviceImages[service.slug]}
               />
             ))}
           </div>
