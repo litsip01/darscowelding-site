@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Darsco Welding Website
 
-## Getting Started
+Professional mobile welding services website for Darsco Welding, serving the Greater Edmonton Area.
 
-First, run the development server:
+## 🔥 Features
+
+- **Next.js 14+** with App Router and TypeScript
+- **Tailwind CSS** for styling
+- **Static Site Generation (SSG)** for optimal performance
+- **27 optimized pages** including dynamic routes
+- **Mobile-responsive** design
+- **Docker deployment** ready
+
+## 🚀 Quick Start
+
+### Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+### Docker Deployment
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+docker-compose up -d --build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The site will be available on port 8004.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Project Structure
 
-## Deploy on Vercel
+```
+darscowelding-site/
+├── app/                    # Next.js App Router pages
+│   ├── page.tsx           # Home page
+│   ├── about/             # About page
+│   ├── contact/           # Contact page with form
+│   ├── gallery/           # Portfolio page
+│   ├── services/          # Service pages (index + dynamic)
+│   ├── industries/        # Industry pages (index + dynamic)
+│   └── locations/         # Location pages (index + dynamic)
+├── components/
+│   ├── layout/            # Header, Footer
+│   └── sections/          # Hero, CTA, ServiceCard
+├── lib/
+│   └── data.ts            # Data access layer
+├── data/
+│   └── site-data.json     # Site configuration
+├── Dockerfile             # Production container
+└── docker-compose.yml     # Docker orchestration
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎨 Brand Details
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Brand**: Darsco Welding
+- **Domain**: darscowelding.ca
+- **Phone**: (780) 405-3244
+- **Email**: info@darscowelding.ca
+- **Primary Color**: Amber (#d97706)
+
+## 📍 Service Areas
+
+- Edmonton
+- Sherwood Park
+- Nisku
+- Leduc
+- Pigeon Lake
+
+## 🔧 Services
+
+- MIG/TIG Welding
+- Structural Welding
+- Mobile Welding Services
+- Fabrication
+- Repairs & Maintenance
+- Custom Metalwork
+
+## 🏭 Industries Served
+
+- Construction Companies
+- Oil & Gas
+- Manufacturing
+- Agricultural
+- Commercial Buildings
+- Residential
+
+## 📞 Contact
+
+For support or inquiries:
+- Phone: (780) 405-3244
+- Email: info@darscowelding.ca

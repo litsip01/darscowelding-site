@@ -1,0 +1,679 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2025-12-14",
+  "brandName": "Darsco Welding",
+  "domain": "darscowelding.ca",
+  "tagline": "Mobile Professional Welding & Fabrication Services for Alberta Businesses",
+  "contactInfo": {
+    "phone": "(780) 405-3244",
+    "email": "info@darscowelding.ca",
+    "address": {
+      "street": "Mobile Service - Serving Greater Edmonton Area",
+      "city": "Edmonton",
+      "province": "AB",
+      "postalCode": "",
+      "country": "Canada"
+    }
+  },
+  "routingRules": {
+    "trailingSlash": true,
+    "canonicalize": true,
+    "canonicalHost": "https://darscowelding.ca",
+    "caseSensitive": false
+  },
+  "dataModel": {
+    "cities": [
+      {
+        "id": "edmonton",
+        "slug": "edmonton",
+        "name": "Edmonton",
+        "province": "Alberta",
+        "country": "Canada",
+        "isPrimary": true
+      },
+      {
+        "id": "sherwood-park",
+        "slug": "sherwood-park",
+        "name": "Sherwood Park",
+        "province": "Alberta",
+        "country": "Canada"
+      },
+      {
+        "id": "nisku",
+        "slug": "nisku",
+        "name": "Nisku",
+        "province": "Alberta",
+        "country": "Canada"
+      },
+      {
+        "id": "leduc",
+        "slug": "leduc",
+        "name": "Leduc",
+        "province": "Alberta",
+        "country": "Canada"
+      },
+      {
+        "id": "pigeon-lake",
+        "slug": "pigeon-lake",
+        "name": "Pigeon Lake",
+        "province": "Alberta",
+        "country": "Canada"
+      }
+    ],
+    "industries": [
+      {
+        "id": "construction",
+        "slug": "construction-companies",
+        "name": "Construction Companies",
+        "description": "Structural steel and site welding for construction projects"
+      },
+      {
+        "id": "oil-gas",
+        "slug": "oil-gas",
+        "name": "Oil & Gas",
+        "description": "Pipeline, rig, and equipment welding for energy sector"
+      },
+      {
+        "id": "manufacturing",
+        "slug": "manufacturing",
+        "name": "Manufacturing",
+        "description": "Production line and equipment fabrication"
+      },
+      {
+        "id": "agricultural",
+        "slug": "agricultural",
+        "name": "Agricultural",
+        "description": "Farm equipment repairs and custom builds"
+      },
+      {
+        "id": "commercial",
+        "slug": "commercial-buildings",
+        "name": "Commercial Buildings",
+        "description": "HVAC, railings, structural repairs for commercial properties"
+      },
+      {
+        "id": "residential",
+        "slug": "residential",
+        "name": "Residential",
+        "description": "Gates, fences, railings, decorative metalwork"
+      }
+    ],
+    "services": [
+      {
+        "id": "mig-tig-welding",
+        "slug": "mig-tig-welding",
+        "name": "MIG/TIG Welding",
+        "shortName": "MIG/TIG",
+        "description": "Precision welding for all metals and applications"
+      },
+      {
+        "id": "structural-welding",
+        "slug": "structural-welding",
+        "name": "Structural Welding",
+        "shortName": "Structural",
+        "description": "Heavy-duty welding for buildings and infrastructure"
+      },
+      {
+        "id": "mobile-welding",
+        "slug": "mobile-welding-services",
+        "name": "Mobile Welding Services",
+        "shortName": "Mobile",
+        "description": "On-site welding wherever you need it"
+      },
+      {
+        "id": "fabrication",
+        "slug": "fabrication",
+        "name": "Fabrication",
+        "shortName": "Fabrication",
+        "description": "Custom metal fabrication and manufacturing"
+      },
+      {
+        "id": "repairs-maintenance",
+        "slug": "repairs-maintenance",
+        "name": "Repairs & Maintenance",
+        "shortName": "Repairs",
+        "description": "Emergency repairs and scheduled maintenance"
+      },
+      {
+        "id": "custom-metalwork",
+        "slug": "custom-metalwork",
+        "name": "Custom Metalwork",
+        "shortName": "Custom",
+        "description": "Artistic and specialty metal creations"
+      }
+    ],
+    "servicePageTypes": [
+      {
+        "id": "mig_tig_construction",
+        "industryId": "construction",
+        "serviceId": "mig-tig-welding",
+        "template": "ServicePage",
+        "pathPattern": "/locations/{citySlug}/mig-tig-welding-construction/",
+        "seoTemplate": {
+          "title": "MIG/TIG Welding for Construction in {CityName} | {BrandName}",
+          "h1": "MIG/TIG Welding for Construction Companies in {CityName}",
+          "description": "Professional MIG/TIG welding for construction projects in {CityName}. Structural steel, on-site welding, and quality craftsmanship from certified welders.",
+          "targetKeywords": [
+            "MIG TIG welding construction {CityName}",
+            "construction welding {CityName}",
+            "structural welding {CityName}",
+            "site welder {CityName}"
+          ]
+        }
+      },
+      {
+        "id": "mobile_oil_gas",
+        "industryId": "oil-gas",
+        "serviceId": "mobile-welding",
+        "template": "ServicePage",
+        "pathPattern": "/locations/{citySlug}/mobile-welding-oil-gas/",
+        "seoTemplate": {
+          "title": "Mobile Welding for Oil & Gas in {CityName} | {BrandName}",
+          "h1": "Mobile Welding Services for Oil & Gas in {CityName}",
+          "description": "24/7 mobile welding for oil and gas operations in {CityName}. Pipeline welding, rig repairs, and emergency response from certified professionals.",
+          "targetKeywords": [
+            "mobile welding oil gas {CityName}",
+            "pipeline welding {CityName}",
+            "oilfield welding {CityName}",
+            "emergency welding {CityName}"
+          ]
+        }
+      },
+      {
+        "id": "fabrication_manufacturing",
+        "industryId": "manufacturing",
+        "serviceId": "fabrication",
+        "template": "ServicePage",
+        "pathPattern": "/locations/{citySlug}/fabrication-manufacturing/",
+        "seoTemplate": {
+          "title": "Metal Fabrication for Manufacturing in {CityName} | {BrandName}",
+          "h1": "Custom Fabrication for Manufacturing in {CityName}",
+          "description": "Professional metal fabrication for manufacturing facilities in {CityName}. Custom parts, equipment builds, and production line solutions.",
+          "targetKeywords": [
+            "metal fabrication manufacturing {CityName}",
+            "custom fabrication {CityName}",
+            "industrial fabrication {CityName}",
+            "manufacturing welder {CityName}"
+          ]
+        }
+      },
+      {
+        "id": "repairs_agricultural",
+        "industryId": "agricultural",
+        "serviceId": "repairs-maintenance",
+        "template": "ServicePage",
+        "pathPattern": "/locations/{citySlug}/welding-repairs-agricultural/",
+        "seoTemplate": {
+          "title": "Agricultural Equipment Welding Repairs in {CityName} | {BrandName}",
+          "h1": "Farm Equipment Welding & Repairs in {CityName}",
+          "description": "Fast, reliable welding repairs for farm equipment in {CityName}. Mobile service to your location, emergency repairs, and custom builds for agriculture.",
+          "targetKeywords": [
+            "farm equipment welding {CityName}",
+            "agricultural welding {CityName}",
+            "farm machinery repair {CityName}",
+            "mobile farm welder {CityName}"
+          ]
+        }
+      },
+      {
+        "id": "structural_commercial",
+        "industryId": "commercial",
+        "serviceId": "structural-welding",
+        "template": "ServicePage",
+        "pathPattern": "/locations/{citySlug}/structural-welding-commercial/",
+        "seoTemplate": {
+          "title": "Structural Welding for Commercial Buildings in {CityName} | {BrandName}",
+          "h1": "Commercial Structural Welding in {CityName}",
+          "description": "Professional structural welding for commercial buildings in {CityName}. Railings, HVAC supports, repairs, and new construction welding.",
+          "targetKeywords": [
+            "commercial welding {CityName}",
+            "structural welding commercial {CityName}",
+            "building welding {CityName}",
+            "commercial welder {CityName}"
+          ]
+        }
+      },
+      {
+        "id": "custom_residential",
+        "industryId": "residential",
+        "serviceId": "custom-metalwork",
+        "template": "ServicePage",
+        "pathPattern": "/locations/{citySlug}/custom-metalwork-residential/",
+        "seoTemplate": {
+          "title": "Custom Metalwork for Residential in {CityName} | {BrandName}",
+          "h1": "Residential Custom Metalwork in {CityName}",
+          "description": "Beautiful custom metalwork for homes in {CityName}. Gates, fences, railings, decorative pieces, and artistic metalwork by skilled craftsmen.",
+          "targetKeywords": [
+            "custom metalwork residential {CityName}",
+            "custom gates {CityName}",
+            "metal railings {CityName}",
+            "decorative welding {CityName}"
+          ]
+        }
+      }
+    ],
+    "derivedRouteOrder": [
+      "CorePages",
+      "CityHubs",
+      "IndustryHubs",
+      "ServicePages",
+      "SolutionPages"
+    ]
+  },
+  "routes": [
+    {
+      "path": "/",
+      "template": "Home",
+      "params": {},
+      "seo": {
+        "title": "Mobile Welding Services Edmonton | Darsco Welding",
+        "h1": "Mobile Professional Welding & Fabrication Services for Alberta Businesses",
+        "description": "Professional mobile welding and fabrication services for Edmonton and area. 24/7 emergency service, certified welders, quality guaranteed.",
+        "targetKeywords": [
+          "mobile welding Edmonton",
+          "welding services Edmonton",
+          "welder Edmonton Alberta"
+        ]
+      }
+    },
+    {
+      "path": "/about/",
+      "template": "About",
+      "params": {},
+      "seo": {
+        "title": "About Darsco Welding | Edmonton Mobile Welding",
+        "h1": "About Darsco Welding",
+        "description": "Learn about Darsco Welding, Edmonton's trusted mobile welding and fabrication service provider delivering professional craftsmanship across Alberta.",
+        "targetKeywords": [
+          "welding company Edmonton",
+          "mobile welder Alberta"
+        ]
+      }
+    },
+    {
+      "path": "/services/",
+      "template": "ServicesIndex",
+      "params": {},
+      "seo": {
+        "title": "Welding Services | MIG/TIG, Structural, Fabrication | Darsco",
+        "h1": "Professional Welding & Fabrication Services",
+        "description": "Full range of welding services including MIG/TIG, structural welding, mobile services, fabrication, repairs, and custom metalwork for Edmonton businesses.",
+        "targetKeywords": [
+          "welding services Edmonton",
+          "fabrication services Alberta",
+          "mobile welding services"
+        ]
+      }
+    },
+    {
+      "path": "/contact/",
+      "template": "Contact",
+      "params": {},
+      "seo": {
+        "title": "Contact Us | Get a Welding Quote | Darsco Welding",
+        "h1": "Contact Darsco Welding",
+        "description": "Get in touch with Darsco Welding for professional welding services. Call (780) 405-3244 for mobile welding anywhere in the Edmonton area.",
+        "targetKeywords": [
+          "welding quote Edmonton",
+          "contact welder Edmonton"
+        ]
+      }
+    },
+    {
+      "path": "/get-quote/",
+      "template": "GetQuote",
+      "params": {},
+      "seo": {
+        "title": "Get a Free Welding Quote | Darsco Welding",
+        "h1": "Get Your Free Welding Quote",
+        "description": "Request a free quote for your welding project. Mobile service available throughout the Edmonton area. Fast response, competitive pricing.",
+        "targetKeywords": [
+          "welding quote Edmonton",
+          "free welding estimate"
+        ]
+      }
+    },
+    {
+      "path": "/gallery/",
+      "template": "Gallery",
+      "params": {},
+      "seo": {
+        "title": "Our Work | Welding Portfolio | Darsco Welding",
+        "h1": "Our Welding Portfolio",
+        "description": "View our portfolio of welding and fabrication projects. From industrial welding to custom residential metalwork across Alberta.",
+        "targetKeywords": [
+          "welding portfolio Edmonton",
+          "welding gallery"
+        ]
+      }
+    },
+    {
+      "path": "/industries/",
+      "template": "IndustriesIndex",
+      "params": {},
+      "seo": {
+        "title": "Industries We Serve | Professional Welding | Darsco Welding",
+        "h1": "Industries We Serve",
+        "description": "Specialized welding services for construction, oil & gas, manufacturing, agricultural, commercial, and residential sectors across Alberta.",
+        "targetKeywords": [
+          "industrial welding Alberta",
+          "specialized welding services Edmonton"
+        ]
+      }
+    },
+    {
+      "path": "/locations/",
+      "template": "LocationsIndex",
+      "params": {},
+      "seo": {
+        "title": "Service Areas | Edmonton, Sherwood Park, Nisku, Leduc | Darsco",
+        "h1": "Mobile Welding Service Areas",
+        "description": "Professional mobile welding across Alberta: Edmonton, Sherwood Park, Nisku, Leduc, and Pigeon Lake. We come to you!",
+        "targetKeywords": [
+          "welding services Alberta",
+          "mobile welding Edmonton area"
+        ]
+      }
+    },
+    {
+      "path": "/locations/edmonton/",
+      "template": "CityHub",
+      "params": {
+        "cityId": "edmonton",
+        "citySlug": "edmonton"
+      },
+      "seo": {
+        "title": "Mobile Welding Services in Edmonton, Alberta | Darsco Welding",
+        "h1": "Edmonton Mobile Welding & Fabrication Services",
+        "description": "Professional mobile welding for Edmonton businesses. On-site service, 24/7 emergency response, and certified welders for all your welding needs.",
+        "targetKeywords": [
+          "mobile welding Edmonton",
+          "welding services Edmonton",
+          "Edmonton welder"
+        ]
+      }
+    },
+    {
+      "path": "/locations/sherwood-park/",
+      "template": "CityHub",
+      "params": {
+        "cityId": "sherwood-park",
+        "citySlug": "sherwood-park"
+      },
+      "seo": {
+        "title": "Mobile Welding Services in Sherwood Park, Alberta | Darsco Welding",
+        "h1": "Sherwood Park Mobile Welding & Fabrication Services",
+        "description": "Professional mobile welding for Sherwood Park businesses. Fast response, quality workmanship, and competitive pricing from local experts.",
+        "targetKeywords": [
+          "mobile welding Sherwood Park",
+          "welding services Sherwood Park",
+          "Sherwood Park welder"
+        ]
+      }
+    },
+    {
+      "path": "/locations/nisku/",
+      "template": "CityHub",
+      "params": {
+        "cityId": "nisku",
+        "citySlug": "nisku"
+      },
+      "seo": {
+        "title": "Mobile Welding Services in Nisku, Alberta | Darsco Welding",
+        "h1": "Nisku Mobile Welding & Fabrication Services",
+        "description": "Industrial-grade mobile welding for Nisku businesses. Serving the industrial corridor with 24/7 emergency response and certified welders.",
+        "targetKeywords": [
+          "mobile welding Nisku",
+          "industrial welding Nisku",
+          "Nisku welder"
+        ]
+      }
+    },
+    {
+      "path": "/locations/leduc/",
+      "template": "CityHub",
+      "params": {
+        "cityId": "leduc",
+        "citySlug": "leduc"
+      },
+      "seo": {
+        "title": "Mobile Welding Services in Leduc, Alberta | Darsco Welding",
+        "h1": "Leduc Mobile Welding & Fabrication Services",
+        "description": "Professional mobile welding for Leduc and area. From agricultural repairs to industrial fabrication, we bring our shop to you.",
+        "targetKeywords": [
+          "mobile welding Leduc",
+          "welding services Leduc",
+          "Leduc welder"
+        ]
+      }
+    },
+    {
+      "path": "/locations/pigeon-lake/",
+      "template": "CityHub",
+      "params": {
+        "cityId": "pigeon-lake",
+        "citySlug": "pigeon-lake"
+      },
+      "seo": {
+        "title": "Mobile Welding Services in Pigeon Lake, Alberta | Darsco Welding",
+        "h1": "Pigeon Lake Mobile Welding & Fabrication Services",
+        "description": "Mobile welding services for Pigeon Lake area. Dock repairs, custom metalwork, and recreational property welding from experienced professionals.",
+        "targetKeywords": [
+          "mobile welding Pigeon Lake",
+          "welding services Pigeon Lake",
+          "Pigeon Lake welder"
+        ]
+      }
+    },
+    {
+      "path": "/industries/construction-companies/",
+      "template": "IndustryHub",
+      "params": {
+        "industryId": "construction",
+        "industrySlug": "construction-companies"
+      },
+      "seo": {
+        "title": "Welding Services for Construction Companies | Darsco Welding",
+        "h1": "Professional Welding for Construction Companies",
+        "description": "Specialized welding for construction projects across Alberta. Structural steel, site welding, and certified workmanship for builders and contractors.",
+        "targetKeywords": [
+          "construction welding Alberta",
+          "structural welding Edmonton",
+          "site welder"
+        ]
+      }
+    },
+    {
+      "path": "/industries/oil-gas/",
+      "template": "IndustryHub",
+      "params": {
+        "industryId": "oil-gas",
+        "industrySlug": "oil-gas"
+      },
+      "seo": {
+        "title": "Welding Services for Oil & Gas | Darsco Welding",
+        "h1": "Professional Welding for Oil & Gas Industry",
+        "description": "24/7 welding services for oil and gas operations. Pipeline welding, rig repairs, and emergency response from certified professionals.",
+        "targetKeywords": [
+          "oil gas welding Alberta",
+          "pipeline welding Edmonton",
+          "oilfield welder"
+        ]
+      }
+    },
+    {
+      "path": "/industries/manufacturing/",
+      "template": "IndustryHub",
+      "params": {
+        "industryId": "manufacturing",
+        "industrySlug": "manufacturing"
+      },
+      "seo": {
+        "title": "Welding Services for Manufacturing | Darsco Welding",
+        "h1": "Professional Welding for Manufacturing",
+        "description": "Custom fabrication and welding for manufacturing facilities. Production equipment, custom parts, and industrial solutions across Alberta.",
+        "targetKeywords": [
+          "manufacturing welding Alberta",
+          "industrial fabrication Edmonton",
+          "production welder"
+        ]
+      }
+    },
+    {
+      "path": "/industries/agricultural/",
+      "template": "IndustryHub",
+      "params": {
+        "industryId": "agricultural",
+        "industrySlug": "agricultural"
+      },
+      "seo": {
+        "title": "Welding Services for Agriculture | Darsco Welding",
+        "h1": "Professional Welding for Agricultural Operations",
+        "description": "Mobile welding for farms across Alberta. Equipment repairs, custom builds, and emergency service when you need it most.",
+        "targetKeywords": [
+          "farm welding Alberta",
+          "agricultural welding Edmonton",
+          "farm equipment repair"
+        ]
+      }
+    },
+    {
+      "path": "/industries/commercial-buildings/",
+      "template": "IndustryHub",
+      "params": {
+        "industryId": "commercial",
+        "industrySlug": "commercial-buildings"
+      },
+      "seo": {
+        "title": "Welding Services for Commercial Buildings | Darsco Welding",
+        "h1": "Professional Welding for Commercial Buildings",
+        "description": "Commercial welding services for property managers and building owners. Railings, HVAC supports, structural repairs, and more.",
+        "targetKeywords": [
+          "commercial welding Alberta",
+          "building welding Edmonton",
+          "commercial welder"
+        ]
+      }
+    },
+    {
+      "path": "/industries/residential/",
+      "template": "IndustryHub",
+      "params": {
+        "industryId": "residential",
+        "industrySlug": "residential"
+      },
+      "seo": {
+        "title": "Welding Services for Residential | Darsco Welding",
+        "h1": "Professional Welding for Residential Properties",
+        "description": "Custom metalwork for homes across Alberta. Beautiful gates, fences, railings, and decorative pieces crafted by skilled artisans.",
+        "targetKeywords": [
+          "residential welding Alberta",
+          "custom gates Edmonton",
+          "metal railings"
+        ]
+      }
+    },
+    {
+      "path": "/services/mig-tig-welding/",
+      "template": "ServicePage",
+      "params": {
+        "serviceId": "mig-tig-welding"
+      },
+      "seo": {
+        "title": "MIG/TIG Welding Services | Precision Welding | Darsco Welding",
+        "h1": "MIG/TIG Welding Services",
+        "description": "Professional MIG and TIG welding for all metals and applications. Precision welding from certified professionals across Alberta.",
+        "targetKeywords": [
+          "MIG welding Edmonton",
+          "TIG welding Alberta",
+          "precision welding"
+        ]
+      }
+    },
+    {
+      "path": "/services/structural-welding/",
+      "template": "ServicePage",
+      "params": {
+        "serviceId": "structural-welding"
+      },
+      "seo": {
+        "title": "Structural Welding Services | Heavy Duty | Darsco Welding",
+        "h1": "Structural Welding Services",
+        "description": "Heavy-duty structural welding for buildings and infrastructure. Certified welders, quality workmanship, and code-compliant work.",
+        "targetKeywords": [
+          "structural welding Edmonton",
+          "heavy duty welding Alberta",
+          "certified structural welder"
+        ]
+      }
+    },
+    {
+      "path": "/services/mobile-welding-services/",
+      "template": "ServicePage",
+      "params": {
+        "serviceId": "mobile-welding"
+      },
+      "seo": {
+        "title": "Mobile Welding Services | We Come to You | Darsco Welding",
+        "h1": "Mobile Welding Services",
+        "description": "On-site welding wherever you need it. Our fully-equipped mobile welding units bring professional service directly to your location.",
+        "targetKeywords": [
+          "mobile welding Edmonton",
+          "on-site welding Alberta",
+          "portable welder"
+        ]
+      }
+    },
+    {
+      "path": "/services/fabrication/",
+      "template": "ServicePage",
+      "params": {
+        "serviceId": "fabrication"
+      },
+      "seo": {
+        "title": "Metal Fabrication Services | Custom Builds | Darsco Welding",
+        "h1": "Metal Fabrication Services",
+        "description": "Custom metal fabrication and manufacturing. From prototype to production, we build exactly what you need.",
+        "targetKeywords": [
+          "metal fabrication Edmonton",
+          "custom fabrication Alberta",
+          "steel fabrication"
+        ]
+      }
+    },
+    {
+      "path": "/services/repairs-maintenance/",
+      "template": "ServicePage",
+      "params": {
+        "serviceId": "repairs-maintenance"
+      },
+      "seo": {
+        "title": "Welding Repairs & Maintenance | Emergency Service | Darsco Welding",
+        "h1": "Welding Repairs & Maintenance",
+        "description": "Fast, reliable welding repairs and scheduled maintenance. 24/7 emergency service available throughout the Edmonton area.",
+        "targetKeywords": [
+          "welding repairs Edmonton",
+          "emergency welding Alberta",
+          "equipment repair welder"
+        ]
+      }
+    },
+    {
+      "path": "/services/custom-metalwork/",
+      "template": "ServicePage",
+      "params": {
+        "serviceId": "custom-metalwork"
+      },
+      "seo": {
+        "title": "Custom Metalwork | Artistic & Specialty | Darsco Welding",
+        "h1": "Custom Metalwork Services",
+        "description": "Beautiful custom metalwork from skilled artisans. Gates, railings, sculptures, and decorative pieces designed and built to your specifications.",
+        "targetKeywords": [
+          "custom metalwork Edmonton",
+          "decorative welding Alberta",
+          "metal art"
+        ]
+      }
+    }
+  ]
+}
